@@ -23,7 +23,6 @@ body {
   margin-top: -4rem;
 }
 
-
 /*--- Navigation --*/
 
 .navbar {
@@ -36,11 +35,6 @@ body {
 
 .navbar-nav li {
   padding-right: .5rem;
-}
-
-.div-nav-link{
-  color: white;
-  padding-top: .8rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -95,26 +89,38 @@ body {
 
 /*--- About Section ---*/
 
-.ability-title {
-  transition: all 400ms ease-in-out;
-  width: 80%;
-  margin-bottom: 0.25em;
+#abilities ul > li {
+  min-height: 30px;
+  padding: 3px 0px; 
 }
 
-.speech-bubble {
-  font-size: 0.85em;
-  line-height: 2em;
-  position: absolute;
-  top: -2.7em;
-  text-align: center;
-  min-width: 3em;
-  border-radius: 0.3em;
-  display: none;
-  color: white;
+#abilities ul > li:hover {
+  background: #F2F2F2; 
 }
 
-/*--- Feature Section ---*/
+#abilities ul > li .ability-title { 
+  display: inline-block; 
+  width: 50%; 
+}
 
+#abilities ul > li .ability-score { 
+  float: right; 
+}
+
+h3.p-heading {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  color: #22A39F;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*--- Projects Section ---*/
 
 .jumbotron {
   background-color: rgba(207, 202, 202, 0.486);
@@ -133,49 +139,11 @@ h3.heading {
   letter-spacing: 0.2rem;
 }
 
-h3.p-heading {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 300;
-  color: #22A39F;
-}
-
 p.lead {
   text-align: center;
   color: #8b9494;
   font-size: 1.3rem;
   font-weight: 200;
-}
-
-
-.work a img {
-  width: 350px;
-  justify-self: center;
-  align-items: center;
-  padding: 1rem 1rem;
-}
-
-/* relevant styles */
-.img__wrap {
-  position: relative;
-  height: 200px;
-  width: 200px;
-}
-
-.img__description {
-  position: absolute;
-  top: 50;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  justify-content: center;
-  background-color: gray;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
 }
 
 .work a {
@@ -189,40 +157,25 @@ p.lead {
   opacity: 1;
 }
 
-/*--- About me Section ---*/
-
-.feature svg.svg-inline--fa {
-  color: #22A39F;
+.work a img {
+  width: 350px;
+  justify-self: center;
+  align-items: center;
+  padding: 1rem 1rem;
 }
 
-.feature h3 {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  padding-bottom: .4rem;
-}
-
-.feature p {
-  font-size: 1.3rem;
-}
-
-.clients {
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.clients img {
-  width: 100%;
-  border-radius: 50%;  
-  box-shadow: 0 0 1rem #999999;
-  display: flex;
-  padding: .1rem .3rem;
-}
-
-ul.no-bullets {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+.img__description {
+  position: absolute;
+  top: 50;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  background-color: gray;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
 }
 
 .btn-git {
@@ -234,8 +187,6 @@ ul.no-bullets {
   background-color: white;
   color: black;
 }
-
-
 
 /*--- Contact Section ---*/
 
@@ -255,7 +206,6 @@ footer a {
   color: white;
 }
 
-
 footer svg.svg-inline--fa {
   font-size: 1.6rem;
   margin: 1.2rem .5rem 0 0;
@@ -263,12 +213,6 @@ footer svg.svg-inline--fa {
 
 footer svg.svg-inline--fa:hover {
   color: #22A39F;
-}
-
-.btn-sm {
-  padding: .1rem .1rem .1rem .1rem;
-  color: white;
-  border-radius: 0;
 }
 
 hr {
@@ -285,12 +229,10 @@ hr.socket {
 
 .space-before {
   padding-bottom: 130px;
-
 }
 
 .space-after {
   padding-bottom: 130px;
-
 }
 
 /*--- Media Queries ---*/
@@ -373,8 +315,3 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
-
-#abilities ul > li { min-height: 30px; padding: 3px 0px; }
-#abilities ul > li:hover { background: #F2F2F2; }
-#abilities ul > li .ability-title { display: inline-block; width: 50%; }
-#abilities ul > li .ability-score { float: right; }
